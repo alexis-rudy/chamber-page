@@ -40,7 +40,7 @@
         <div class="hero">
             <h1>Welcome to Nampa!</h1>
             <img class="heroImg" src="images/traindepo1.jpg" alt="hero image">       
-            <button class="joinBtn">Join the Chamber</button>     
+            <button class="joinBtn" type="button" onclick="window.location.href='join.html';">Join the Chamber</button>     
         </div>
         <div class="event">
             <h2>New Rec Center Section Open</h2>
@@ -52,10 +52,11 @@
         </div>
         <div class="weather">
             <h2>Weather</h2>
-            <img src="images/cloudy.png" alt="weather image">
-            <p>90&deg;F</p>
-            <p>Wind Speed: <span id="windSpeed"></span>mph</p>
-            <p>Wind Chill: N/A</p>
+            <img id="weather-icon" src="" alt="weather image">
+            <p><span id="figcaption"></span></p>
+            <p><span id="temp"></span> &deg;F</p>
+            <p>Wind Speed: <span id="windSpeed"></span> mph</p>
+            <p>Wind Chill: <span id="windchill"></span></p>
         </div>
         <div class="newsRelease">
             <h2>News Release</h2>
@@ -97,7 +98,7 @@
         </div>
         <div class="join">
             <h3><span class="gray">Run a company?</span> Join the Chamber now to get a spotlight ad on our page!</h3>
-            <button class="joinBtn2">Join Us</button>
+            <button class="joinBtn2" type="button" onclick="window.location.href='join.html';">Join Us</button>
         </div>
     </main>
     <footer>
