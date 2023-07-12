@@ -47,13 +47,13 @@ main{
     flex-direction: column;
     margin: 0 auto;
 }
-img[data-src] {
+/* img[data-src] {
     filter: blur(0.2em);
 }
 img{
     filter: blur(0em);
     transition: filter 0.5s;
-}
+} */
 
 /*hp specific formatting*/
 header img{
