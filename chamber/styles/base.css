@@ -301,3 +301,8 @@ footer{
     background-color: rgba(0, 0, 0, 0.2);
     color: #CECECE;
 }
+/*Thanks Page*/
+.thanks{
+    background-image: url("../images/pglakelowellfall.jpg");
+    /* background-color: red; */
+}

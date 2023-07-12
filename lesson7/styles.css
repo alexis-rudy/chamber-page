@@ -4,10 +4,10 @@ main{
     flex-direction: column;
     margin: 0 auto;
 }
-img[data-src] {
+/* img{
     filter: blur(0.2em);
-}
-img{
+} */
+img[data-scr]{
     filter: blur(0em);
     transition: filter 0.5s;
 }
