@@ -79,3 +79,23 @@ footer .footerTop .footerLeft{
     grid-column: 3/4;
 }
 }
+
+/*Discover Page*/
+.discover{
+    /* grid-template-columns: ; */
+    grid-template-rows: 60vh repeat(3, 1fr);
+}
+.demographics{
+    grid-column: 1/3;
+}
+.deerflat{
+    grid-row: 2;
+}
+.downtown{
+    grid-column: 1/3;
+}
+
+/*Join Page*/
+.submitbtn{
+    margin-left: 37vw;
+}

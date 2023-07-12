@@ -59,3 +59,24 @@ main .hero h3{
     grid-row: 3;
 }
 }
+/*Discovery Page*/
+.discover{
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: ; */
+}
+/*Join Page*/
+fieldset:nth-child(2){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.businessinfo{
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    text-align: left;
+}
+.membershipdeets{
+    display: block;
+    width: fit-content;
+    /* float: right; */
+}

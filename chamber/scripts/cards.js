@@ -1,4 +1,4 @@
-const source = "../json/data.json";
+const source = "data.json";
 
 async function getBusinessData() {
     const response = await fetch(source);

@@ -35,7 +35,8 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="join">
+        <h1>Join the Chamber!</h1>
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Personal Information</legend>
@@ -46,16 +47,59 @@
                 <label>Business Position<input type="text" name="postion" pattern="[A-Za-z\-\s].{7,}"></label>
             </fieldset>
             <fieldset>
-                <legend>Business Information</legend>
-                <label>Business Name* <input type="text" required></label>
-                <div>Membership Level</div>
-                <label><input type="radio" name="Membership" value="NP">Non-Profit</label>
-                <label><input type="radio" name="Membership" value="bronze">Bronze</label>
-                <label><input type="radio" name="Membership" value="silver">Silver</label><label><input type="radio" name="Membership" value="gold">Gold</label>
-                <label>Business Description <textarea name="buisnessDescription" rows="5"></textarea></label>
+                <div class="businessinfo">
+                    <legend>Business Information</legend>
+                    <label>Business Name* <input type="text" required></label>
+                    <label>Business Description <textarea name="buisnessDescription" rows="5"></textarea></label>
+                    <label class="membershiplabel">Membership Level</label>
+                    <label class="radio"><input type="radio" name="Membership" value="NP">Non-Profit</label>
+                    <label class="radio"><input type="radio" name="Membership" value="bronze">Bronze</label>
+                    <label class="radio"><input type="radio" name="Membership" value="silver">Silver</label>
+                    <label class="radio"><input type="radio" name="Membership" value="gold">Gold</label>
+                </div>
+                <div class="membershipdeets">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3">Membership Benefits</th>
+                            </tr>
+                            <tr>
+                                <th class="blank"></th>
+                                <th>Non-Profit</th>
+                                <th>Bronze</th>
+                                <th>Silver</th>
+                                <th>Gold</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Event Invites</td>
+                                <td>&#x2714;</td>
+                                <td>&#x2714;</td>
+                                <td>&#x2714;</td>
+                                <td>&#x2714;</td>
+                            </tr>
+                            <tr>
+                                <td>Advertisements on Site</td>
+                                <td>&#10060;</td>
+                                <td>&#x2714;</td>
+                                <td>&#x2714;</td>
+                                <td>&#x2714;</td>
+                            </tr>                
+                            <tr>
+                                <td>Exclusive Events</td>
+                                <td>&#10060;</td>
+                                <td>&#10060;</td>
+                                <td>&#x2714;</td>
+                                <td>&#x2714;</td>
+                            </tr>
+                        </tbody>
+                        <caption>Table 1: Membership Benefits</caption>
+                    </table>
+                </div>
             </fieldset>
             <input type="hidden" id="loaded" name="loaded">
-            <input type="submit" value="Join the Commerce">
+            <input class="submitbtn" type="submit" value="Join the Commerce">
         </form>
 
     </main>

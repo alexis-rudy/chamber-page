@@ -12,10 +12,10 @@ let date = new Date();
 let longDate = new Intl.DateTimeFormat("en-US", {dateStyle: "full"}).format(date);
 let year = date.getFullYear();
 
-document.getElementById("fullDate").textContent = longDate;
-document.getElementById("year1").textContent = year;
+// document.querySelector('#year').textContent = longDate;
+// document.getElementById("year").textContent = year;
 
-//JS for modified elements
+//JS for last modified
 let lastMod = document.lastModified;
 document.getElementById("lastMod").textContent = lastMod;
 
@@ -37,27 +37,3 @@ if ("IntersectionObserver" in window) {
         loadImages(img);
     });
 }
-// JS for slide show
-let slideIndex = 1;
-showSlides(slidesIndex);
-
-function plusSlides(n){
-    showSlides(slideIndex += n);
-}
-
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("slides");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-  }
-  

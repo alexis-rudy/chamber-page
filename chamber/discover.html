@@ -27,15 +27,15 @@
             <nav>
                 <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
                 <ul id="primaryNav">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="discover.html">Discover</a></li>
                     <li><a href="directory.html">Directory</a></li>
                     <li><a href="join.html">Join</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </header>
-    <main>
+    <main class="discover">
         <div class="demographics">
             <div class="slides fade">Population: 110,951</div>
             <div class="slides fade">Number of Veterans: 6,818</div>
@@ -45,29 +45,29 @@
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
 
-        <div>
+        <div class="deerflat">
             <h2>Deer Flat National Wildlife Refuge</h2>
             <p>From the Refuge site: In southwest Idaho’s Treasure Valley, surrounded by suburban homes and farmlands, Deer Flat National Wildlife Refuge provides refuge for both wildlife and people. The refuge protects the Lake Lowell Unit and the Snake River Islands Unit to provide oases for resident and migratory wildlife, including spectacular concentrations of mallards and Canada geese. The refuge also provides a place for people to slow down, relax and unwind. Stop by and enjoy an adventure for your experience level on your public lands!</p>
             <picture>
                 <img class="discover-img" src="images/placeholder400x300.png" data-src="images/400x300deerflat.jpg">
             </picture>
         </div>
-        <div>
+        <div class="idahocenter">
             <h2>Ford Idaho Center</h2>
             <p>From the Idaho Center site: The Ford Idaho Center is the premier Multi-Event Complex in the Pacific Northwest. Attend a concert, convention, sporting event, trade show, or an equestrian show, and you will be treated to a first-class experience at the Ford Idaho Center. We are centrally located between Seattle, Portland, Reno, and Salt Lake City. With air transportation just twenty minutes away at the Boise Airport, we are truly at the Crossroads of the Northwest.</p>
             <picture><img class="discover-img" src="images/placeholder400x300.png" data-src="images/400x300idahocenter.jpg"></picture>
         </div>
-        <div>
+        <div class="nnu">
             <h2>Northwest Nazarene University</h2>
             <p>from the site: Welcome to the campus of Northwest Nazarene University! We are a comprehensive Christian University founded on the philosophy of providing a holistic education that prepares you for your future. We are excited you are here!</p>
             <picture><img class="discover-img" src="images/placeholder400x300.png" data-src="images/400x300nnu.jpg"></picture>
         </div>
-        <div>
+        <div class="golfcourse">
             <h2>Redhawk Golf Course</h2>
             <p>From their site: RedHawk Public Golf Course is an 18-hole championship facility overlooking Lake Lowell in Nampa, Idaho. The golf course, opened in July 2014, offers panoramic views of Lake Lowell and the Owyhee Mountains. The championship designed golf course will challenge players of all skills levels with its smooth fast greens, rolling undulating fairways, and numerous teeing areas.</p>
             <picture><img class="discover-img" src="images/placeholder400x300.png" data-src="images/400x300golfcourse.jpg"></picture>
-        </div>
-        <div>
+        </div> 
+        <div class="downtown">
             <h2>Downtown Nampa</h2>
             <p>From their site: Nampa’s historic downtown is stirred with new life and amenities, spurred by creative and diverse merchants. Downtown Nampa provides a nurturing environment for small businesses and entrepreneurs, while offering affordable space, entertainment, cultural and recreational opportunities. It provides a quaint yet vibrant environment that captures the heart and soul of all individuals.</p>
             <picture><img class="discover-img" src="images/placeholder400x300.png" data-src="images/400x300downtown.jpg"></picture>
@@ -92,6 +92,8 @@
             <h5>Last Modification: <span id="lastMod"></span></h5>
         </div>
         <script src="scripts/javascript.js"></script>
+        <script src="scripts/slideshow.js"></script>
+
     </footer>
 </body>
 </html>
