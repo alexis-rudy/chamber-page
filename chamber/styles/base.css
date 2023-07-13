@@ -317,3 +317,20 @@ footer{
     background-image: url("../images/pglakelowellfall.jpg");
     /* background-color: red; */
 }
+/*Contact Us*/
+.contact{
+    text-align: center;
+}
+.contactBtn{
+    /* margin: 15px; */
+    padding: .9rem;
+    font-size: 1.2rem;
+    background-color: rgba(100, 149, 237, 0.5);
+    border: none;
+    border-radius: 5px;
+    margin-left: 25vw;
+}
+.contactBtn:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+}

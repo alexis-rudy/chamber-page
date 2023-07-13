@@ -101,3 +101,19 @@ footer .footerTop .footerLeft{
 .submitbtn{
     margin-left: 37vw;
 }
+
+/*Contact Page*/
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10vh 1fr;
+}
+.contact h1{
+    grid-column: 1/3;
+}
+.chamberInfo{
+    grid-row: 2/3;
+}
+.contactBtn{
+    margin-left: 20vh;
+}
