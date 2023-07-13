@@ -2,6 +2,8 @@
     /*button stuff
     width: 20vw;
     height: 5vh;*/
+
+
 main{
     display: grid;
     grid-template-columns: 1fr 1fr;

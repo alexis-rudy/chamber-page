@@ -3,12 +3,16 @@ header{
     /* margin-top: 2vh; */
     padding-top: 1vh;
 }
-    nav button{
+nav button{
     display: none;
 }
-    nav ul li{
+
+nav ul li{
     display: inline;
     border: none;
+}
+#primaryNav{
+    display: block;
 }
 main{
     grid-template-columns: 1fr 2fr 1fr;

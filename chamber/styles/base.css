@@ -76,6 +76,9 @@ header .left{
     margin-left: auto;
     font-size: 1.5rem;
 }
+nav{
+    text-align: center;
+}
 nav #hamburgerBtn{
     background-color: transparent;
     border: none;
@@ -103,8 +106,12 @@ nav ul li.active a{
 }
 #primaryNav.open{
     display: block;
+    padding-left: inherit;
 }
-nav ul li{
+#primaryNav{
+    display: none;
+}
+.icon .open{
     display: none;
 }
 #hamburgerBtn span:nth-child(1){
@@ -201,6 +208,10 @@ main .spotlights #spotlightThree{
 }
 .join .joinBtn2{
     width: fit-content;
+    display: none;
+}
+.join .gray{
+    color: #CECECE;
 }
 /*Discover page*/
 /*Sideshow*/
