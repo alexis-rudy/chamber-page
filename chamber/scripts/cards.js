@@ -1,4 +1,4 @@
-const source = "data.json";
+const source = "https://github.com/alexis-rudy/chamber-page/blob/main/chamber/json/data.json";
 
 async function getBusinessData() {
     const response = await fetch(source);
