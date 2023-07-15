@@ -13,6 +13,12 @@ header{
     top: 0;
     height: 10vh;
 }
+.logo{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25px 50px;
+    margin-top: 0;
+}
 nav{
     text-align: center;
 }
@@ -129,4 +135,6 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color: blueviolet;
+    padding: 1rem;
 }
