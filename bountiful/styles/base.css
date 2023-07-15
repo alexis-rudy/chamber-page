@@ -2,4 +2,131 @@
 
 body{
     font-family: "Dosis", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    height: 10vh;
+}
+nav{
+    text-align: center;
+}
+nav #hamburgerBtn{
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
+}
+nav ul li{
+    list-style-type: none;
+    display: block;
+    padding: .5rem;
+}
+nav ul li:hover{
+    background-color: darkcyan;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(196, 196, 57);
+}
+nav ul li.active{
+    background-color: green;
+    color: white;
+}
+#primaryNav.open{
+    display: block;
+}
+#primaryNav{
+    display: none;
+}
+#hamburgerBtn span:nth-child(1){
+    display: block;
+}
+#hamburgerBtn span:nth-child(1).open{
+    display: none;
+}
+#hamburgerBtn span:nth-child(2){
+    display: none;
+}
+#hamburgerBtn span:nth-child(2).open{
+    display: block;
+}
+.heroDiv{
+    background-color: rgba(0, 0, 0, .5);
+}
+.hero{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.title{
+    font-size: 4rem;
+    background-color: rgba(0, 139, 139, 0.5);
+    margin-top: 0;
+    z-index: 3;
+}
+.description{
+    background-color: yellow;
+    padding: 3rem;
+    margin: 0;
+}
+.description h3{
+    font-size: 2rem;
+}
+.description div{
+    padding: 3rem;
+    border: 3px solid darkcyan;
+    border-radius: 10px;
+    margin: 10px;
+}
+.weatherCards{
+    display: flex;
+    /* flex-basis: 500px; */
+    flex-wrap: wrap;
+}
+.weatherCards div{
+    margin: .3rem;
+    background-color: rgb(82, 82, 215);
+    padding: .5rem;
+    border: 3px solid yellow;
+    border-radius: 10px;
+}
+.callToAction h2{
+    font-size: 3rem;
+    background-color: rgba(255, 255, 0, 0.5);
+    margin-top: 0;
+    z-index: 3;
+}
+.callToAction button{
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-family: "Dosis";
+    background-color: darkblue;
+    color: yellow;
+}
+.callToAction button:hover{
+    cursor: pointer;
+}
+.socials{
+    background-color: rgb(173, 204, 230);
+    padding: 3rem;
+}
+.socials h2{
+    font-size: 1.8rem;
+}
+.socialLinks{
+    display: flex;
+    justify-content: space-evenly;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
