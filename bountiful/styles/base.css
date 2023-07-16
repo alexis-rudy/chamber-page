@@ -45,13 +45,15 @@ nav ul li.active{
     color: white;
 }
 #primaryNav.open{
-    display: block;
+    display: flex;
+    flex-direction: row;
 }
 #primaryNav{
     display: none;
 }
 #hamburgerBtn span:nth-child(1){
     display: block;
+    color: rgb(0, 139, 139);
 }
 #hamburgerBtn span:nth-child(1).open{
     display: none;
@@ -93,12 +95,12 @@ nav ul li.active{
 }
 .weatherCards{
     display: flex;
-    /* flex-basis: 500px; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
 }
 .weatherCards div{
     margin: .3rem;
-    background-color: rgb(82, 82, 215);
+    background-color: rgb(173, 204, 230);
     padding: .5rem;
     border: 3px solid yellow;
     border-radius: 10px;
@@ -114,7 +116,7 @@ nav ul li.active{
     border-radius: 5px;
     font-size: 1.5rem;
     font-family: "Dosis";
-    background-color: darkblue;
+    background-color: rgb(173, 204, 230);
     color: yellow;
 }
 .callToAction button:hover{
@@ -137,4 +139,45 @@ footer{
     justify-content: space-around;
     background-color: blueviolet;
     padding: 1rem;
+}
+.fresh{
+    background-image: url("../images/medium_blueberries.jpg");
+    /* margin: 3rem; */
+}
+.fresh header{
+    margin: 0;
+    background-color: yellow;
+    position: inherit;
+}
+.fresh main{
+    margin: 3rem;
+    text-align: center;
+}
+.fresh fieldset{
+    border-radius: 10px;
+    border-color: solid 2px darkcyan;
+    margin-bottom: 10px;
+    padding: .9rem;
+    font-size: 1.2rem;
+    text-align: left;
+    background-color: rgba(173, 204, 230, 0.5);
+}
+legend{
+    color: white;
+}
+.fresh label{
+    display: block;
+    padding: .5rem;
+}
+.submitbtn{
+    padding: .5rem;
+    border: 2px solid darkcyan;
+    border-radius: 3px;
+    background-color: darkcyan;
+    font-size: 1.1rem;
+    font-family: Dosis;
+}
+.submitbtn:hover{
+    cursor: pointer;
+    background-color: rgba(0, 139, 139, 0.5);
 }

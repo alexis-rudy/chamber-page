@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
 </head>
-<body>
+<body class="fresh">
     <header>
-        <img class="logo" src="#" alt="Bountiful Foods logo">
-        <h2>Bountiful Foods</h2>
+        <img class="logo" src="images/logo-small.png" alt="Bountiful Foods logo">
+        <!-- <h2>Bountiful Foods</h2> -->
         <nav>
             <button id="hamburgerBtn" class=""><span>&#9776;</span><span>X</span></button>
             <ul id="primaryNav" class="">
@@ -36,7 +36,7 @@
             <fieldset>
                 <legend>Your Drink Info</legend>
                 <label>First Fruit Choice 
-                    <span class="fruitChoices"></span>
+                    <input type="radio" name="fruit1"> <span class="fruitChoices"></span>
                 </label>
                 <label>Second Fruit Choice 
                     <span class="fruitChoices"></span>
@@ -47,7 +47,7 @@
                 <label>Any Special Requests?</label>
                 <textarea name="requests" rows="5"></textarea>
             </fieldset>
-            <input type="button" name="submitbtn" value="Create your drink">
+            <input class="submitbtn" type="button" name="submitbtn" value="Create your drink">
         </form>
     </main>
     <footer>
@@ -62,6 +62,7 @@
         <h5>WDD 230 Final Project</h5>
         <h5>Last Modification: <span id="lastMod"></span></h5>
         <script src="script/date.js"></script>
+        <script src="script/menu.js"></script>
     </footer>    
 </body>
 </html>

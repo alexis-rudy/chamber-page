@@ -26,7 +26,11 @@
     </header>
     <main>
         <div class="heroDiv">
-            <img class="hero" src="images/small_strawberries1.jpg" alt="hero image">
+            <picture>
+                <source media="(min-width:64rem)" srcset="images/large_strawberries">
+                <source media="(min-width:35rem)" srcset="images/medium_strawberries">
+                <img class="hero" src="https://placehold.co/600x480" data-src="images/small_strawberries1.jpg" alt="hero image" loading="lazy">
+            </picture>
             <h1 class="title">Bountiful Foods</h1>
         </div>
         <div class="description">
@@ -42,27 +46,32 @@
         </div>
         <div class="weatherCards">
             <div class="currentTemp">
-                <h4>The current temperature is</h4>
-                <span class="temp"></span>
+                <h4>The current temperature is
+                <span id="temp"></span> &deg;.</h4>
             </div>
             <div class="currentDescription">
-                <h4>Today it's</h4>
-                <span class="weatherDescription"></span>
-                <h4 class="note"></h4>
+                <h4>Today it's a
+                <span id="weatherDescription"></span></h4>
+                <h4 id="note"></h4>
             </div>
             <div class="currentHumidity">
-                <h4>The humidity levels today are</h4>
-                <span class="currentHumidity"></span>
+                <h4>The humidity level today is
+                <span id="currentHumidity"></span></h4>
             </div>
             <div class="threeForecast">
                 <h4>Our Three Day Forecast</h4>
-                <span class="dayOne"></span>
-                <span class="dayTwo"></span>
-                <span class="dayThree"></span>
+                <hr>
+                <h4>Tomorrow <span id="dayOne"></span></h4>
+                <h4>The day after <span id="dayTwo"></span></h4>
+                <h4>And the day after that <span id="dayThree"></span></h4>
             </div>
         </div>
         <div class="callToAction">
-            <img class="hero" src="images/blueberries.jpg" alt="a picure of blueberries">
+            <picture>
+                <source media="(min-width:64rem)" srcset="images/large_blueberries">
+                <source media="(min-width:35rem)" srcset="images/medium_blueberries">
+                <img class="hero" src="https://placehold.co/600x480" data-src="images/small_blueberries.jpg" alt="hero image" loading="lazy">
+            </picture>
             <h2>Come create your new favorite fruit drink!</h2>
             <div class="numDrinks">
                 <h4>You've created <span class="drinks"></span> drinks so far</h4>
@@ -92,6 +101,9 @@
         <!--Photo by <a href="https://unsplash.com/de/@zaibtse?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">ZaiB Tse</a> on <a href="https://unsplash.com/photos/KVv5lFOMY1E?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
         Photo by <a href="https://unsplash.com/@sandriniya?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexandra Kikot</a> on <a href="https://unsplash.com/photos/mjP6MQz834E?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   -->
+        <script src="script/loading.js"></script>
+        <script src="script/menu.js"></script>
+        <script src="script/weather.js"></script>
         <script src="script/date.js"></script>
     </footer>
 </body>
