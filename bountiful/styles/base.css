@@ -169,6 +169,9 @@ legend{
     display: block;
     padding: .5rem;
 }
+textarea{
+    width: 100%;
+}
 .submitbtn{
     padding: .5rem;
     border: 2px solid darkcyan;
