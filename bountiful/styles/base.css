@@ -34,7 +34,6 @@ nav ul li{
 }
 nav ul li:hover{
     background-color: darkcyan;
-
 }
 nav ul li a{
     text-decoration: none;
@@ -183,4 +182,33 @@ textarea{
 .submitbtn:hover{
     cursor: pointer;
     background-color: rgba(0, 139, 139, 0.5);
+}
+.aboutus{
+    background-color: darkcyan;
+}
+.aboutus header{
+    margin: 0;
+    background-color: yellow;
+    position: inherit;
+}
+.aboutus nav ul li:hover{
+    background-color: white;
+}
+.aboutus main{
+    margin: 3rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.aboutus div{
+    background-image: url('../images/small_strawberries-2.jpg');
+    border: 2px solid yellow;
+    border-radius: 4px;
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    color: white;
+}
+.contactInfo{
+    display: flex;
+    flex-direction: column;
 }
