@@ -1,3 +1,33 @@
 @media only screen and (min-width: 64rem) {
-
+#primaryNav{
+    display: inline-flex;
+    /* font-size: 1.5rem; */
+}
+/* #primaryNav.open{
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+} */
+#hamburgerBtn{
+    display: none;
+}
+.title{
+    font-size: 5rem;
+}
+.numDrinks button{
+    margin-left: 50rem;
+}
+.fresh main{
+    text-align: center;
+    margin: 5vw 15vw;
+}
+.fresh .submitbtn{
+    font-size: 1.5rem;
+}
+.aboutus main{
+    margin: 5vw 15vw;
+}
+.companyInfo{
+    background-image: url("../images/medium_blueberries.jpg");
+}
 }

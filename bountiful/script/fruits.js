@@ -1,5 +1,5 @@
 const fruit_data = 'script/fruitdata.json';
-const choice = document.querySelector('.fruitChoices')
+const choice = document.querySelector('.fruitChoices');
 
 // async function apiFetch() {
 //     try {
@@ -48,15 +48,16 @@ function summary(){
   let calories = 0;
   let fruitChoices = [fruit1, fruit2, fruit3];
 
-  fruitChoices.forEach(fruit => {
-    carbs = fruit_data.fruit.nutritions.carbohydrates;
-    protein = fruit_data.fruit.nutritions.protein;
-    fat = fruit_data.fruit.nutritions.fat;
-    sugar = fruit_data.fruit.nutritions.sugar;
+
+  fruitChoices.forEach(fruitName => {
+    carbs = fruit_data.fruits.nutritions.carbohydrates;
+    protein = fruit_data.fruits.nutritions.protein;
+    fat = fruit_data.fruits.nutritions.fat;
+    sugar = fruit_data.fruits.nutritions.sugar;
     calories = fruit_data.nutritions.calories;
   });
 
-  document.body.innerHTML = ``;
+  document.body.fresh.innerHTML = "";
   let summaryBox = document.createElement('div');
   let information = document.createElement('p');
   information.textContent = `Here's your information:
@@ -75,8 +76,7 @@ function summary(){
   summaryBox.append(document);
   drinksMade++;
 }
-
-let drinksMade = 0;
 function drinkCount(){
-  const drinks = localStorage.setItem("numDrinksMade-ls", drinksMade);
+  const drinks = Number(localStorage.getItem("numDrinksMade-ls")) || 0;
+  document.querySelector("#drinks").textContent = drinks;
 }

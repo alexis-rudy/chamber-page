@@ -1,2 +1,11 @@
 @media only screen and (min-width: 35rem){
+    .callToAction button{
+        margin-left: 28rem;
+        padding: 1rem;
+    }
+    #primaryNav.open{
+        display: inline-flex;
+        /* margin: 10px; */
+        padding: 0;
+    }
 }
